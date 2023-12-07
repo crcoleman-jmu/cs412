@@ -1,3 +1,10 @@
+"""
+Title:  Max Clique Approximation
+Authors: Chase Coleman & Nicholas St.Amour
+Date: 12/7/23
+"""
+
+
 def bron_kerbosch(graph, r, p, x, cliques):
     if not p and not x:
         cliques.append(r)
@@ -12,14 +19,13 @@ def find_max_clique(graph):
     cliques = []
     bron_kerbosch(graph, set(), set(graph.keys()), set(), cliques)
     max_clique = max(cliques, key=len)
-    return ' '.join(max_clique)
+    sorted_clique = sorted(max_clique)
+    return ' '.join(sorted_clique)
 
 
 def main():
     m = int(input())
-    # m = 2
     edge_list = [input().split() for _ in range(m)]
-    # edge_list = [['a', 'b'], ['b', 'c'], ['b', 'd'], ['c', 'd']]
     
     graph = {}
     for edge in edge_list:
@@ -28,9 +34,7 @@ def main():
         graph.setdefault(v, set()).add(u)
 
     max_clique_output = find_max_clique(graph)
-
-
-    print("Sample Max Clique output:")
+    
     print(max_clique_output)
 
 if __name__ == "__main__":
