@@ -23,6 +23,3 @@ def max_clique_bruteforce(graph):
             max_clique = nodes
 
     return max_clique
-
-# Example usage
-
