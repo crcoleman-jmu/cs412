@@ -1,5 +1,6 @@
 import random
-import optimal_solution
+import cs412_maxclique_exact
+import cs412_maxclique_optimal
 
 def generate_large_graph(size):
     """
@@ -17,5 +18,5 @@ def generate_large_graph(size):
 large_graph = generate_large_graph(20)
 
 # Find the maximum clique (this may take a long time)
-result = optimal_solution.max_clique_bruteforce(large_graph)
+result = cs412_maxclique_exact.max_clique_bruteforce(large_graph)
 print("Maximum Clique:", result)
