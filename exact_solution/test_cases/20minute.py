@@ -1,6 +1,6 @@
 import random
 import cs412_maxclique_exact
-import cs412_maxclique_optimal
+
 
 def generate_large_graph(size):
     """
