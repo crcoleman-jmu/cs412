@@ -1,8 +1,0 @@
-uploading
-git add .
-git commit -m "Message"
-git push
-
-
-downloading
-git pull
