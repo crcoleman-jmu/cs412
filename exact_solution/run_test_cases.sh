@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Compile and run the Python script
-python exact_solution.py > output.txt
+python cs412_maxclique_exact.py > output.txt
 
 # Define sample input
 echo "9" > input.txt
@@ -18,7 +18,7 @@ echo "c d" >> input.txt
 echo "e f" >> input.txt
 
 # Run the script with the sample input
-python approximation_solution.py < input.txt >> output.txt
+python cs412_maxclique_exact.py < input.txt >> output.txt
 
 # Display the output
 cat output.txt
